@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+@import "variables";
+@import "login";
+@import "register";
+@import "menuButtons";
+@import "homepage";
+@import "modal";
+@import "myprofile";
+@import "myshifts";

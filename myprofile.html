@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TITLE ICON -->
+    <link rel="icon" href="../img/icon.png" type="image/icon type" />
+    <title>PROGBRO - MyProfile</title>
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="../style/general.css " />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="./myprofile.js" defer></script>
+    <script type="module" src="./client/addshift.js"></script>
+    <script type="module" src="./client/displayName.js" defer></script>
+    <script type='module' src="./client/logout.js" defer></script>
+  </head>
+  <body>
+    <header class="top-section" id="section-top">
+      <nav class="nav-bar" id="nav">
+        <a href="/client/home.html" ><img src="../img/icon.png" alt="logo" class="nav-img" id="img-nav" /></a>
+        <button class="shift-btn" id="add-shift">+</button>
+        <ul class="nav-list" id="list-nav">
+          <li><a href="/client/allshifts.html">AllShifts</a></li>
+          <li><a href="/client/myshifts.html">MyShifts</a></li>
+          <li><a href="../myprofile.html">MyProfile</a></li>
+        </ul>
+        <p class="nav-text" id="welcome-text">
+          Welcome <span id="user-name"></span>
+        </p>
+        <button class="logOut-btn" id="log-out">LogOut</button>
+      </nav>
+    </header>
+    <main class="myprofile-container">
+      <div class="container">
+        <form class="container-form" id="edit-profile">
+          <h1>MyProfile</h1>
+          <label for="first-name">First Name:</label>
+          <input
+            class="input-style"
+            id="first-profile"
+            name="first-name"
+            type="text"
+            readonly
+          />
+          <label for="last-name">Last Name:</label>
+          <input
+            class="input-style"
+            id="last-profile"
+            name="last-name"
+            type="text"
+            readonly
+          />
+          <label for="username">Username:</label>
+          <input
+            class="input-style"
+            id="user-profile"
+            name="username"
+            type="text"
+            readonly
+          />
+          <label for="password">Password:</label>
+          <input
+            class="input-style"
+            id="pass-profile"
+            name="password"
+            type="password"
+            readonly
+          />
+          <label for="age">Age:</label>
+          <input
+            class="input-style"
+            id="age-profile"
+            name="age"
+            type="number"
+            readonly
+          />
+          <label for="email">Email:</label>
+          <input
+            class="input-style"
+            id="email-profile"
+            name="email"
+            type="email"
+            readonly
+          />
+
+          <button class="container-btn" type="button" id="edit-modal-btn">
+            Edit Info
+          </button>
+        </form>
+      </div>
+    </main>
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="modal-title">Add your shift:</div>
+        <button class="close-modal" id="close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form class="modal-form" id="shift-form">
+          <label for="worker-name">Your name:</label>
+          <input
+            class="form-input"
+            name="worker-name"
+            id="name-input"
+            type="text"
+            required
+            readonly
+          />
+          <label for="start-time"> Fill in your starting time: </label>
+          <input
+            class="form-input"
+            name="start-time"
+            id="start-input"
+            type="datetime-local"
+            required
+          />
+          <label for="'end-time">Fill in your end time:</label>
+          <input
+            class="form-input"
+            name="end-time"
+            id="end-input"
+            type="datetime-local"
+            required
+          />
+          <label for="hourly-wage"> Fill in your hourly wage:</label>
+          <input
+            class="form-input"
+            name="hourly-wage"
+            id="wage-input"
+            type="number"
+            required
+          />
+          <label for="workplace">Pick your Workplace:</label>
+          <select name="workplace" id="workplace-select" required>
+            <option value="Site #1">Site #1</option>
+            <option value="Office #2">Office #2</option>
+            <option value="Factory #3">Factory #3</option>
+          </select>
+          <label for="comments-box">Add a comment:</label>
+          <textarea
+            class="comment-box"
+            id="comment-input"
+            rows="4"
+            cols="45"
+            placeholder="Add your comment here.."
+          ></textarea>
+        </form>
+        <button id="save-btn" class="save-form">Save</button>
+      </div>
+    </div>
+    <div id="overlay"></div>
+
+
+
+    <div class="modal" id="modal-data">
+      <div class="modal-header">
+        <div class="modal-title">Edit your personal detail:</div>
+        <button class="close-modal" id="close-edit">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form class="modal-form" id="shift-form-edit">
+          <label for="first-name-modal">First Name:</label>
+          <input
+            class="form-input"
+            name="first-name-modal"
+            id="first-edit"
+            type="text"
+            required
+            readonly
+           
+          />
+          <label for="last-name-modal"> Last Name: </label>
+          <input
+            class="form-input"
+            name="last-name-modal"
+            id="last-edit"
+            type="text"
+            required
+            readonly
+          />
+          <label for="'username-modal">Username:</label>
+          <input
+            class="form-input"
+            name="username-modal"
+            id="username-edit"
+            type="text"
+            required
+          />
+          <label for="password-modal"> Password:</label>
+          <input
+            class="form-input"
+            name="password-modal"
+            id="password-edit"
+            type="password"
+            required
+          />
+          <label for="age-modal">Age:</label>
+          <input class="form-input" name="age-modal" id="age-edit" type="number" readonly/>
+          <label for="email-modal">Email:</label>
+          <input
+            class="form-input"
+            name="email-modal"
+            id="email-edit"
+            type="email"
+            required
+          />
+         
+        </form>
+        <button id="edit-btn" class="save-form">
+          Save
+        </button>
+      </div>
+
+     
+  </body>
+</html>

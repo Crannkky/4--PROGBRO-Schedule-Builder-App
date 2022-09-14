@@ -1,0 +1,45 @@
+.container {
+  .register--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.9rem;
+    border: solid 1px $green-first;
+    border-radius: 25px;
+    box-shadow: 0.5rem 0.5rem $green-second;
+    padding: 3rem;
+    font-family: $font-family;
+    color: $white-text;
+    margin-bottom: 2rem;
+
+    .register--text {
+      text-transform: uppercase;
+      font-family: $font-family;
+      font-size: 2rem;
+    }
+
+    .return-reg-btn {
+      margin-top: 1rem;
+      width: 20rem;
+      height: 2rem;
+      border: solid 4px $turqoise;
+      border-radius: 10px;
+      font-family: $font-family;
+      text-transform: uppercase;
+      font-size: 1.4rem;
+      letter-spacing: 0.3rem;
+      background-color: $green-first;
+      cursor: pointer;
+      &:hover {
+        transition: 1s;
+        background-color: black;
+        border: solid 4px $green-first;
+        color: white;
+      }
+    }
+  }
+  .hide {
+    display: none;
+  }
+}

@@ -1,0 +1,231 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .top-section {
+    width: 100%;
+    border-bottom: 3px solid $green-first;
+  }
+
+  .nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    width: 100%;
+    margin: auto;
+    gap: 9rem;
+
+    .shift-btn {
+      // margin-left: 1rem;
+      margin-top: 1.2rem;
+      height: 3rem;
+      width: 3rem;
+      border: 3px solid black;
+      border-radius: 25px;
+      color: black;
+      background-color: $green-first;
+      font-family: $font-family;
+      font-size: 2rem;
+      cursor: pointer;
+      &:hover {
+        transition: 1s;
+        background-color: $green-first;
+        border: solid 4px white;
+        color: white;
+      }
+    }
+
+    .nav-list {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      text-align: center;
+      padding-top: 2rem;
+
+      li {
+        list-style: none;
+
+        a {
+          text-decoration: none;
+          color: white;
+          font-family: $font-family;
+          font-size: 1.2rem;
+          border: solid 3px transparent;
+          &:hover {
+            color: $green-first;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .nav-img {
+      width: 5rem;
+      height: 5rem;
+    }
+
+    .nav-text {
+      color: white;
+      font-family: $font-family;
+      padding-top: 2rem;
+      font-size: 1.2rem;
+    }
+
+    .logOut-btn {
+      margin-top: 1.5rem;
+      // margin-right: 1.5rem;
+      width: 5rem;
+      height: 2rem;
+      border: solid 4px black;
+      color: black;
+      border-radius: 10px;
+      font-family: $font-family;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      letter-spacing: 0.3rem;
+      background-color: $green-first;
+      cursor: pointer;
+      &:hover {
+        transition: 1s;
+        background-color: $green-first;
+        border: solid 4px white;
+        color: white;
+      }
+    }
+  }
+
+  .filter-container {
+    display: flex;
+    gap: 3rem;
+    margin-top: 2rem;
+    .search-input {
+      width: 15rem;
+      margin-bottom: 2rem;
+      border: solid 2px $green-first;
+      text-align: center;
+      border-radius: 25px;
+    }
+  }
+
+  .table-container {
+    display: flex;
+    margin-top: 3rem;
+    align-items: center;
+    flex-direction: column;
+    max-width: 80%;
+    height: 90vh;
+    color: white;
+    margin-bottom: 4rem;
+    overflow: auto;
+
+    .table-home {
+      display: table;
+      border: 3px solid white;
+      font-family: $font-family;
+      overflow: scroll;
+      white-space: no-wrap;
+
+      .table--head {
+        width: 100%;
+
+        th {
+          background-color: $green-first;
+          text-transform: uppercase;
+          border: solid 2px white;
+          width: 12rem;
+          font-size: 1.2rem;
+          letter-spacing: 0.1em;
+          padding: 1.2rem;
+        }
+      }
+
+      tbody {
+        tr {
+          .name-cell {
+            color: white;
+            border: solid 2px white;
+            width: 5rem;
+            font-size: 1.2rem;
+            letter-spacing: 0.1em;
+            padding: 1.2rem;
+          }
+
+          td {
+            color: white;
+            border: solid 2px white;
+            width: 12rem;
+            font-size: 1.2rem;
+            letter-spacing: 0.1em;
+            padding: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-template {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: white;
+    width: 100%;
+
+    .footer-icon {
+      width: 10rem;
+      height: 10rem;
+    }
+
+    .footer-list {
+      padding: 2rem;
+      li {
+        list-style: none;
+        font-size: 1.3rem;
+        padding: 0.5rem;
+
+        a {
+          text-decoration: none;
+          color: black;
+          font-family: $font-family;
+          &:hover {
+            color: $green-first;
+            text-decoration: underline;
+            background-color: black;
+            padding: 0.2rem;
+            border: solid 1px $green-first;
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+    .contact-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      // margin-left: 30%;
+
+      .contact-text {
+        font-family: $font-family;
+        font-size: 1.4rem;
+      }
+      .contact-list {
+        display: flex;
+        flex-direction: row;
+        gap: 10%;
+
+        li {
+          list-style: none;
+
+          .contact-icons {
+            height: 4rem;
+            width: 4rem;
+          }
+        }
+      }
+    }
+  }
+}

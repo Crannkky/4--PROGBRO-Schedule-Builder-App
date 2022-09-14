@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TITLE ICON -->
+    <link rel="icon" href="./img/icon.png" type="image/icon type" />
+    <title>PROGBRO - Register your account!</title>
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="./style/general.css" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <img src="./img/logo.png" alt="progbro logo" class="container-img" />
+
+        <form class="container-form" id="forgot--form" method="POST">
+          <h1 class="container-title">Recover your password:</h1>
+
+          <label for="email">Email:</label>
+          <input
+            type="text"
+            name="email"
+            class="input-style"
+            id="email-input"
+            placeholder="Enter email"
+          />
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            class="input-style"
+            id="pass-input"
+            placeholder="Enter new password"
+          />
+
+          <button type="button" class="container-btn" id="change-btn">
+            Change password
+          </button>
+        </form>
+        <div class="register--container hide" id="forgot--return">
+          <p class="register--text">
+            Your password has been changed succesfully!
+          </p>
+          <button class="return-reg-btn" id="return-btn" type="btn">
+            Return to Login Page
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="./forgot-pass.js"></script>
+  </body>
+</html>

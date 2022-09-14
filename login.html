@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TITLE ICON -->
+    <link rel="icon" href="./img/icon.png" type="image/icon type" />
+    <title>PROGBRO - Welcome</title>
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="./style/general.css" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./login.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <img src="./img/logo.png" alt="progbro logo" class="container-img" />
+
+        <form class="container-form" method="POST">
+          <h1 class="container-title">Login</h1>
+          <label for="username">Username</label>
+          <input
+            type="text"
+            name="username"
+            class="input-style"
+            id="user-input"
+            placeholder="Enter your username"
+          />
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            class="input-style"
+            id="pass-input"
+            placeholder="Enter your password"
+          />
+          <button type="button" class="container-btn" id="log-btn">
+            Login
+          </button>
+          <p class="container--text">
+            You don't have an account?
+            <a href="./register.html">Register here!</a>
+          </p>
+          <p class="container--text">
+            You forgot your password?
+            <a href="./forgot-pass.html">Recover it here!</a>
+          </p>
+        </form>
+      </div>
+  </body>
+</html>

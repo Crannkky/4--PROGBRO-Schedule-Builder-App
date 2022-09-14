@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TITLE ICON -->
+    <link rel="icon" href="../img/icon.png" type="image/icon type" />
+    <title>PROGBRO - Home</title>
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="../style/general.css " />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" src="./home.js" defer></script>
+    <script type="module" src="./logout.js" defer></script>
+    <script type="module" src="./displayName.js" defer></script>
+  </head>
+  <body>
+    <header class="top-section" id="section-top">
+      <nav class="nav-bar" id="nav">
+        <a href="./home.html"
+          ><img src="../img/icon.png" alt="logo" class="nav-img" id="img-nav"
+        /></a>
+        <p class="nav-text" id="welcome-text">
+          Welcome <span id="user-name"></span>
+        </p>
+        <button class="logOut-btn" id="log-out">LogOut</button>
+      </nav>
+    </header>
+    <h1 class="menu-title">What do you want to do today?</h1>
+    <main class="home-container" id="container-table">
+      <div class="btn-cont-1">
+        <a href="./allshifts.html"
+          ><button class="menu-btn" id="allshifts-link">
+            View AllShifts
+          </button></a
+        >
+        <a href="./myshifts.html"
+          ><button class="menu-btn" id="myshifts-link">
+            View Your Shifts
+          </button></a
+        >
+      </div>
+      <div class="btn-cont-2">
+        <a href="../myprofile.html"
+          ><button class="menu-btn" id="profile-link">
+            View Your Profile
+          
+    </main>
+    <footer class="footer-template" id="footer">
+      <img class="footer-icon" src="../img/logo.png" alt="logo" />
+      <ul class="footer-list" id="footer-nav">
+        <li><a href="./allshifts.html">AllShifts</a></li>
+        <li><a href="./myshifts.html">MyShifts</a></li>
+        <li><a href="../myprofile.html">MyProfile</a></li>
+      </ul>
+
+      <div class="contact-container">
+        <p class="contact-text">Contact us at:</p>
+        <ul class="contact-list">
+          <li>
+            <a href="#"
+              ><img class="contact-icons" src="../img/github.png"
+            /></a>
+          </li>
+          <li>
+            <a href="#">
+              <img class="contact-icons" src="../img/instagram.png" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img class="contact-icons" src="../img/linkedin.png" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

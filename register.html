@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TITLE ICON -->
+    <link rel="icon" href="./img/icon.png" type="image/icon type" />
+    <title>PROGBRO - Register your account!</title>
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="./style/general.css" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <img src="./img/logo.png" alt="progbro logo" class="container-img" />
+
+        <form class="container-form" id="register--form" method="POST">
+          <h1 class="container-title">Register</h1>
+          <label for="firstName">First Name:</label>
+          <input
+            type="text"
+            name="firstName"
+            class="input-style"
+            id="first-name-input"
+            placeholder="Enter first name"
+          />
+          <label for="lastName">Last Name:</label>
+          <input
+            type="text"
+            name="lastName"
+            class="input-style"
+            id="last-name-input"
+            placeholder="Enter last name"
+          />
+
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            name="username"
+            class="input-style"
+            id="user-input"
+            placeholder="Enter username"
+          />
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            class="input-style"
+            id="pass-input"
+            placeholder="Enter password"
+          />
+          <label for="age">age:</label>
+          <input
+            type="email"
+            name="email"
+            class="input-style"
+            id="age-input"
+            placeholder="Enter age"
+          />
+
+          <label for="email">Email addres:</label>
+          <input
+            type="email"
+            name="email"
+            class="input-style"
+            id="email-input"
+            placeholder="Enter email address"
+          />
+          <button type="button" class="container-btn" id="reg-btn">
+            Register
+          </button>
+        </form>
+        <div class="register--container hide" id="register--return">
+          <p class="register--text">Your account was registered succesfully!</p>
+          <button
+            class="return-reg-btn"
+            id="return-btn"
+            type="btn"
+            onclick="returnLogIn()"
+          >
+            Return to Login Page
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="./register.js"></script>
+  </body>
+</html>
